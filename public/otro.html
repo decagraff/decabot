@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Twitch Login</title>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script src="main.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 50px auto;
+            text-align: center;
+            width: 450px;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Twitch Login</h1>
+    <button id="connect" class="btn btn-primary">Connect with Twitch</button>
+    <button id="disconnect" class="btn btn-danger" style="display: none;">Disconnect</button>
+    <div id="username" style="margin-top: 20px;"></div>
+    <div id="connected" style="display: none; margin-top: 20px;">Conectado con éxito a Twitch.</div>
+</body>
+</html>

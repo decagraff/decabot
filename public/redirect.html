@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    var hash = window.location.hash.substring(1);
+    var params = new URLSearchParams(hash);
+    var accessToken = params.get('access_token');
+
+    if (accessToken) {
+        localStorage.setItem('accessToken', accessToken);
+        history.replaceState(null, null, ' ');
+    }
+
+    window.location.href = 'https://127.0.0.7:5501/dashboard';
+</script>
+</body>
+</html>
